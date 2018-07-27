@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	var arr= new Array();
+	arr.push("1");
+	arr.push("2");
+	
+	
+	arr=["1","2","3"];/*키지정 불가*/
+	arr.shift();/*0번째방으로 땡긴다 마지막 방이 사라짐 고로 위에는 방이2개*/
+	arr.unshift('1');/*0번째 자리에 넣고 뒤로밈*/
+	arr.pop();/*마지막방이 사라짐*/
+	arr.push('3');/*마지막에 값을 넣음*/
+	arr.splice(1,1);
+	/*중간을 삭제 뒤에 값은 몇번째방부터 몇번째 방을 지운다는 의미 1,1 은 1번째 방부터 1번째 방까지 1,2는 1번째방부터 2번째방까지*/
+	for(var i=0; i<arr.length;i++){
+		document.write(arr[i]+'<br>');
+	}
+	
+	/*키지정 가능*/
+</script>
+</body>
+</html>
